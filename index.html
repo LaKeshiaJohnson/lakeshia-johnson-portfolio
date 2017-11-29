@@ -47,7 +47,7 @@
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>LaKeshia Johnson</b></p><br>
-      <img src="images/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="333">
+      <img src="images/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="250" height="275">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -58,7 +58,7 @@
       After enrolling in an intensive, six month web development boot camp at Nashville Software school, I have found that I get that same feeling from coding. Building web applications gives me a new ways to flex my creative muscles, and challenges me to think outside the box. I am excited to continue my journey as a  developer,  and look forward creating new things with code.</p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Technologies:</p>
+  <p class="w3-large w3-center w3-padding-16">MY STACK:</p>
   
   <div id="stack">
   <img class="icons" src="images/angular.jpg" alt="">
@@ -94,21 +94,43 @@
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to learn more.</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
+
+  <center><div class="projects">
       <p>Front-End Capstone</p>
-      <img src="images/MedList2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
+      <img src="images/MedList2.png"  id="myBtn" class="w3-hover-opacity" width="250" height="250">
+  </div>
+  <div class="projects">
+     <p>Back-End Capstone</p>
+      <img src="images/soon.jpg"  id="myBtn2" class="w3-hover-opacity" width="250" height="250">
+  </div></center>
+
+
+
+   <!-- <div class="w3-row-padding w3-center">
+    <div class="w3-col m3"> 
+      <p>Front-End Capstone</p>
+      <img src="images/MedList2.png"  id="myBtn" class="w3-hover-opacity" width="200" height="200">
+   </div> 
 
     <div class="w3-col m3 w3-center">
       <p>Back-End Capstone</p>
-      <img src="images/soon.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coming soon">
+      <img src="images/soon.jpg"  id="myBtn2" class="w3-hover-opacity" width="190" height="190">
     </div>
+    
+  </div> -->
+  <div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Developed with AngularJS, Med List is an app that allows users to keep track of medications by creating med lists. Lists contain medication name, along with pertinent information about the medication such as dosage, directions for use, and special notes. User lists are stored as JSON objects in the Firebase Web API. Styled with Bootstrap and SASS.</p>
+    <a href="https://github.com/LaKeshiaJohnson/Front-End-Capstone">See this project on Github</a>
   </div>
+
+</div>
 
 </div>
 
