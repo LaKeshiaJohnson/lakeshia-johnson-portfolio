@@ -104,7 +104,7 @@
   </div>
   <div class="projects">
      <p>Back-End Capstone</p>
-      <img src="images/soon.jpg"  id="myBtn2" class="w3-hover-opacity" width="250" height="250">
+      <img src="images/blend.png"  id="myBtn2" class="w3-hover-opacity" width="300" height="250">
   </div></center>
 
 
@@ -124,13 +124,23 @@
   <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Developed with AngularJS, Med List is an app that allows users to keep track of medications by creating med lists. Lists contain medication name, along with pertinent information about the medication such as dosage, directions for use, and special notes. User lists are stored as JSON objects in the Firebase Web API. Styled with Bootstrap and SASS.</p>
-    <a href="https://github.com/LaKeshiaJohnson/Front-End-Capstone">See this project on Github</a>
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Developed with AngularJS, Med List is an app that allows users to keep track of medications by creating med lists. Lists contain medication name, along with pertinent information about the medication such as dosage, directions for use, and special notes. User lists are stored as JSON objects in the Firebase Web API. Styled with Bootstrap and SASS.</p>
+      <a href="https://github.com/LaKeshiaJohnson/Front-End-Capstone">See this project on Github</a>
+    </div>
+
   </div>
 
-</div>
+  <div id="myModal2" class="modal">
+  <!-- Modal2 content -->
+    <div class="modal-content">
+      <span class="close2">&times;</span>
+      <p>In the spirit of ‘letting food be our medicine', the Blend app, provides users with healthy smoothie recipes that target different ailments and health concerns. Users will be able to view recipes by category/concern, save their favorite recipes, and submit their own smoothie creations. Front-end built with AngularJS, utilizing token-based authentication. Backend-end API built with Ruby on Rails. Styled with Bootstrap and SASS.</p>
+      <a href="https://github.com/LaKeshiaJohnson/blend-it">See this project on Github</a>
+    </div>
+
+  </div>
 
 </div>
 
@@ -139,6 +149,14 @@
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<div id="modal02" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img02" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
