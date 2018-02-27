@@ -94,32 +94,28 @@ window.onclick = function(event) {
     }
 }
 
-//blend slide show
-var slideIndex = 1;
-showDivs(slideIndex);
+//modal 3
+var modal3 = document.getElementById('myModal3');
+var btn3 = document.getElementById("myBtn3");
+var span3 = document.getElementsByClassName("close3")[0];
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+// When the user clicks on the button, open the modal 
+btn3.onclick = function() {
+    modal3.style.display = "block";
 }
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+    modal3.style.display = "none";
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slides2");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
 }
+
+
 
 

@@ -118,45 +118,40 @@
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to learn more.</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-
-  <center><div class="projects">
-      <p>Front-End Capstone</p>
+ <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  
+  <center>
+    <div class="projects">
+      <p>MedList</p>
       <img src="images/MedList2.png"  id="myBtn" class="w3-hover-opacity" width="250" height="250">
-  </div>
-  <div class="projects">
-     <p>Back-End Capstone</p>
+    </div>
+
+    <div class="projects">
+     <p>Blend</p>
       <img src="images/blend.png"  id="myBtn2" class="w3-hover-opacity" width="350" height="250">
-  </div></center>
-
-
-
-   <!-- <div class="w3-row-padding w3-center">
-    <div class="w3-col m3"> 
-      <p>Front-End Capstone</p>
-      <img src="images/MedList2.png"  id="myBtn" class="w3-hover-opacity" width="200" height="200">
-   </div> 
-
-    <div class="w3-col m3 w3-center">
-      <p>Back-End Capstone</p>
-      <img src="images/soon.jpg"  id="myBtn2" class="w3-hover-opacity" width="190" height="190">
     </div>
     
-  </div> -->
-  <div id="myModal" class="modal">
+    <div class="projects">
+     <p>Grateful</p>
+      <img src="images/Grateful.png"  id="myBtn3" class="w3-hover-opacity" width="350" height="250">
+    </div>
+  </center>
+
+ <div id="myModal" class="modal">
 
   <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
       <center><h4>Med List</h4></center>
-      <br>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-        <img class="medListList" src="images/MedListList.png" style="width:100%">
-      </div>
-      <br>
+      <center><h5>Front-End Capstone Project</h5></center>
+      
       <p>Developed with AngularJS, Med List is an app that allows users to keep track of medications by creating med lists. Lists contain medication name, along with pertinent information about the medication such as dosage, directions for use, and special notes. User lists are stored as JSON objects in the Firebase Web API. Styled with Bootstrap and SASS.</p>
       Med list is now live! See the deployed site <a href="https://capstone-39282.firebaseapp.com">HERE.</a><br><br>
       <a href="https://github.com/LaKeshiaJohnson/Front-End-Capstone">See the code on Github.</a>
+      <br><br>
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="medListList" src="images/MedListList.png" style="width:100%">
+      </div>
     </div>
 
   </div>
@@ -166,26 +161,41 @@
     <div class="modal-content">
       <span class="close2">&times;</span>
       <center><h4>Blend</h4></center>
-      <br>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-        <img class="slides2" src="images/blend.png" style="width:100%">
-        <img class="slides2" src="images/blendHome.png" style="width:100%">
-        <img class="slides2" src="images/blendRecipe.png" style="width:100%">
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-        </div>
-      </div>
-      <br>
+      <center><h5>Back-End Capstone Project</h5></center>
+      
       <p>In the spirit of ‘letting food be our medicine', the Blend app, provides users with healthy smoothie recipes that target different ailments and health concerns. Users will be able to view recipes by category/concern, save their favorite recipes, and submit their own smoothie creations. Front-end built with AngularJS, utilizing token-based authentication. Backend-end API built with Ruby on Rails and SQLite. Styled with Bootstrap and SASS.</p>
       <a href="https://github.com/LaKeshiaJohnson/blend">See this project on Github</a> <br>
       <a href="https://github.com/LaKeshiaJohnson/smoothie-api">See the Blend backend API on Github</a>
 
-    </div>
+      <br><br>
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <div><img class="slides2" src="images/blend.png" style="width:100%"></div>
+        <br>
+        <div><img class="slides2" src="images/blendHome.png" style="width:100%"></div>
+        <br>
+        <div><img class="slides2" src="images/blendRecipe.png" style="width:100%"></div>
+      </div>
 
+    </div>
+  </div>
+
+  <div id="myModal3" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close3">&times;</span>
+      <center><h4>Grateful</h4></center>
+      <p>Ruby on Rails gratitude journal with CRUD functionality.</p>
+      
+      <a href="https://github.com/LaKeshiaJohnson/RoR-gratitude-journal">See the code on Github.</a><br><br>
+
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <div><img class="slides3" src="images/Grateful.png" style="width:100%"></div>
+        <br>
+        <div><img class="slides3" src="images/Grateful2.png" style="width:100%"></div>
+        <br>
+        <div><img class="slides3" src="images/Grateful3.png" style="width:100%"></div>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -205,6 +215,16 @@
     <img id="img02" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
+</div>
+
+<div id="modal03" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img03" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
