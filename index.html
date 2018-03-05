@@ -7,12 +7,11 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
+
 	<body>
-		<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -41,38 +40,15 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
+  <h3 class="w3-center w3-xxlarge w3-text-dark-gray w3-wide">ABOUT ME</h3>
   <p class="w3-center"><em>Web & Software Developer</em></p>
   
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>LaKeshia Johnson</b></p><br>
-      <!-- <img src="images/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="250" height="275"> -->
-      <div class="w3-content w3-section" style="max-width:250px">
- 
-        <img class="mySlides w3-animate-fading" src="images/me.jpg" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="images/me2.jpg" style="width:100%">
-      </div>
+      <img src="images/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="250" height="275">
     </div>
-<!-- script for carousel -->
-    <script>
-      var myIndex = 0;
-      carousel();
 
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 9000);    
-      }
-    </script>
-
-    <!-- Hide this text on small devices -->
+<!-- About Text -->
     <div class="w3-col m6 w3-padding-large">
       <br><br>
       <p>Welcome to my website! :-)<br><br>
@@ -80,43 +56,20 @@
       After enrolling in an intensive, six month web development boot camp at Nashville Software school, I have found that I get that same feeling from coding. Building web applications gives me a new ways to flex my creative muscles, and challenges me to think outside the box. I am excited to continue my journey as a  developer,  and look forward creating new things with code.</p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">MY STACK:</p>
-  
-  <div id="stack">
-  <img class="icons" src="images/angular.jpg" alt="">
-  <img class="icons" src="images/bootstrap.png" alt="">
-  <img class="icons" src="images/css.png" alt="">
-  <img class="icons" src="images/firebase.png" alt="">
-  <img class="icons" src="images/git_logo.png" alt="">
-  <img class="icons" src="images/github.png" alt="">
-  <img class="icons" src="images/grunt.png" alt=""><br>
-  <img class="icons" src="images/html5.png" alt="">
-  <img class="icons" src="images/javascript.png" alt="">
-  <img class="icons" src="images/jquery.png" alt="">
-  <img class="icons" src="images/rails.png" alt="">
-  <img class="icons" src="images/ruby.png" alt="">
-  <img class="icons" src="images/sass.png" alt="">
-  <img class="icons" src="images/sql.jpg" alt="">
-  <img class="icons" src="images/trello.jpg" alt="">
-    
 
+  <p class="w3-large w3-center w3-padding-16">TECHNOLOGIES:</p>
+  
+  <div class="w3-center">
+    <img src="../images/Stack.png" width="900" height="300">
   </div>
   
 </div>
 
+<!-- Container (Portfolio Section) took out w3-content in div class-->
+<div class=" w3-container w3-padding-64 w3-light-grey" id="portfolio">
+  <h3 class="w3-center w3-xxlarge w3-text-dark-gray w3-wide">MY WORK</h3>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <!-- <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span> -->
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to learn more.</em></p><br>
+  <p class="w3-center"><em>Here are some of my projects.<br> Click on the images to learn more.</em></p><br>
 
  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   
@@ -137,64 +90,47 @@
     </div>
   </center>
 
+<!-- MED LIST Modal content -->
  <div id="myModal" class="modal">
-
-  <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
       <center><h4>Med List</h4></center>
       <center><h5>Front-End Capstone Project</h5></center>
-      
-      <p>Developed with AngularJS, Med List is an app that allows users to keep track of medications by creating med lists. Lists contain medication name, along with pertinent information about the medication such as dosage, directions for use, and special notes. User lists are stored as JSON objects in the Firebase Web API. Styled with Bootstrap and SASS.</p>
-      Med list is now live! See the deployed site <a href="https://capstone-39282.firebaseapp.com">HERE.</a><br><br>
-      <a href="https://github.com/LaKeshiaJohnson/Front-End-Capstone">See the code on Github.</a>
-      <br><br>
       <div class="w3-content w3-display-container" style="max-width:800px">
         <img class="medListList" src="images/MedListList.png" style="width:100%">
       </div>
+      <p>Developed with AngularJS, Med List is an app that allows users to keep track of medications by creating med lists. Lists contain medication name, along with pertinent information about the medication such as dosage, directions for use, and special notes. User lists are stored as JSON objects in the Firebase Web API. Styled with Bootstrap and SASS.</p>
+      Med list is now live! See the deployed site <a href="https://capstone-39282.firebaseapp.com">HERE.</a><br><br>
+      <a href="https://github.com/LaKeshiaJohnson/Front-End-Capstone">See the code on Github.</a>
     </div>
-
   </div>
 
+
+<!-- BELND (Modal2) content -->
   <div id="myModal2" class="modal">
-  <!-- Modal2 content -->
     <div class="modal-content">
       <span class="close2">&times;</span>
       <center><h4>Blend</h4></center>
       <center><h5>Back-End Capstone Project</h5></center>
-      
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <img src="images/blendRecipe.png" style="width:100%">
+      </div>
       <p>In the spirit of ‘letting food be our medicine', the Blend app, provides users with healthy smoothie recipes that target different ailments and health concerns. Users will be able to view recipes by category/concern, save their favorite recipes, and submit their own smoothie creations. Front-end built with AngularJS, utilizing token-based authentication. Backend-end API built with Ruby on Rails and SQLite. Styled with Bootstrap and SASS.</p>
       <a href="https://github.com/LaKeshiaJohnson/blend">See this project on Github</a> <br>
       <a href="https://github.com/LaKeshiaJohnson/smoothie-api">See the Blend backend API on Github</a>
-
-      <br><br>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-        <div><img class="slides2" src="images/blend.png" style="width:100%"></div>
-        <br>
-        <div><img class="slides2" src="images/blendHome.png" style="width:100%"></div>
-        <br>
-        <div><img class="slides2" src="images/blendRecipe.png" style="width:100%"></div>
-      </div>
-
     </div>
   </div>
 
+<!-- GRATEFUL (Modal3) content -->
   <div id="myModal3" class="modal">
-  <!-- Modal content -->
     <div class="modal-content">
       <span class="close3">&times;</span>
       <center><h4>Grateful</h4></center>
-      <p>Ruby on Rails gratitude journal with CRUD functionality.</p>
-      
-      <a href="https://github.com/LaKeshiaJohnson/RoR-gratitude-journal">See the code on Github.</a><br><br>
-
       <div class="w3-content w3-display-container" style="max-width:800px">
-        <div><img class="slides3" src="images/Grateful.png" style="width:100%"></div>
-        <br>
-        <div><img class="slides3" src="images/Grateful2.png" style="width:100%"></div>
-        <br>
-        <div><img class="slides3" src="images/Grateful3.png" style="width:100%"></div>
+        <img src="images/Grateful2.png" style="width:100%">
       </div>
+      <p>Ruby on Rails gratitude journal with CRUD functionality.</p>
+      <a href="https://github.com/LaKeshiaJohnson/RoR-gratitude-journal">See the code on Github.</a>
     </div>
   </div>
 
@@ -227,17 +163,12 @@
 
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <!--<span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span> -->
-     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTACT</span>
-  </div>
-</div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">LET'S CONNECT</h3>
+
+  <h3 class="w3-center w3-xxlarge w3-text-dark-gray w3-wide w3-opacity-min">CONTACT</h3>
+  <p class="w3-center"><em>Let's connect!</em></p>
 
   <center>
   <div class="w3-xlarge w3-section">
@@ -247,7 +178,7 @@
   </center>
 
 
- <div class="w3-row w3-padding-32 w3-section">
+  <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
       <!-- Add Google Maps -->
       <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
@@ -257,7 +188,8 @@
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Nashville, US<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ljohnson2k@gmail.com<br>
       </div>
-      <!--Swing by for a cup of <i class="fa fa-coffee"></i>, or--> <p> Leave me a note:</p>
+
+       <p>Leave me a note:</p>
       <form action="mailto:ljohnson2k@gmail.com" method="post" enctype="text/plain">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">

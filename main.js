@@ -49,8 +49,9 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+//******************* MODALS ****************************
 
-//modal 1
+//MED LIST- modal 1
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
@@ -72,7 +73,8 @@ window.onclick = function(event) {
     }
 }
 
-//modal 2
+
+//BLEND - modal 2
 var modal2 = document.getElementById('myModal2');
 var btn2 = document.getElementById("myBtn2");
 var span2 = document.getElementsByClassName("close2")[0];
@@ -94,7 +96,7 @@ window.onclick = function(event) {
     }
 }
 
-//modal 3
+//GRATEFUL - modal 3
 var modal3 = document.getElementById('myModal3');
 var btn3 = document.getElementById("myBtn3");
 var span3 = document.getElementsByClassName("close3")[0];
