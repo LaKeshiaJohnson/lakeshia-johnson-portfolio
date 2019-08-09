@@ -56,7 +56,7 @@
       After enrolling in an intensive, six month web development boot camp at Nashville Software school, I have found that I get that same feeling from coding. Building web applications gives me a new ways to flex my creative muscles, and challenges me to think outside the box. I am excited to continue my journey as a  developer,  and look forward creating new things with code.</p>
     </div>
   </div>
-
+<!-- Tech Stack -->
   <p class="w3-large w3-center w3-padding-16">TECHNOLOGIES:</p>
   
   <div id="stack">  
@@ -89,11 +89,6 @@
   
   <center>
     <div class="projects">
-      <p>MedList</p>
-      <img src="images/MedList2.png"  id="myBtn" class="w3-hover-opacity" width="250" height="250">
-    </div>
-
-    <div class="projects">
      <p>Blend</p>
       <img src="images/blend.png"  id="myBtn2" class="w3-hover-opacity" width="350" height="250">
     </div>
@@ -101,6 +96,16 @@
     <div class="projects">
      <p>Grateful</p>
       <img src="images/Grateful.png"  id="myBtn3" class="w3-hover-opacity" width="350" height="250">
+    </div>
+
+    <div class="projects">
+     <p>Magic 8 Ball</p>
+      <img src="images/magic8ball.png"  id="myBtn4" class="w3-hover-opacity" width="350" height="250">
+    </div>
+
+    <div class="projects">
+      <p>MedList</p>
+      <img src="images/MedList2.png"  id="myBtn" class="w3-hover-opacity" width="250" height="250">
     </div>
   </center>
 
@@ -148,6 +153,20 @@
     </div>
   </div>
 
+<!-- MAGIC-8-BALL (Modal4) content -->
+  <div id="myModal4" class="modal">
+    <div class="modal-content">
+      <span class="close4">&times;</span>
+      <center><h4>Magic 8 Ball</h4></center>
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <img src="images/magic8ball.png" style="width:100%">
+      </div>
+      <p>Predict your future with this jQuery Magic 8 Ball. Ask a question, hit the submit button, and see what your future holds.</p>
+      <a href="https://lakeshiajohnson.github.io/magic-8-ball/">Try it out!</a><br>
+      <a href="https://github.com/LaKeshiaJohnson/magic-8-ball">See the code on Github.</a>
+    </div>
+  </div>
+
 </div>
 
 <!-- Modals for full size images on click-->
@@ -171,6 +190,14 @@
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img03" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<div id="modal04" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img04" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
